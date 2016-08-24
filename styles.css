@@ -100,18 +100,20 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #zero_line0 {
-	animation: zero_play_zero 5s 0 forwards;
+	animation: zero_play_zero 5s 2 forwards;
 	z-index: 3;
 }
 
 @keyframes zero_play_zero {
 	0% {
-		top: -20px;
-		/*opacity: 0;*/
+		top: 0px;
+		color: rgba(0,0,0,0.5)
 	}
-	20% {
+	15% {
+		color: black;
+	}
+	15% {
 		top: 9px;
-		/*opacity: 1;*/
 	}
 	100% {
 		top: 9px;	
@@ -119,13 +121,13 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #zero_line1 {
-	animation: zero_play_one 5s 0 forwards;
+	animation: zero_play_one 5s 2 forwards;
 	z-index: 2;
 }
 
 @keyframes zero_play_one {
 	0% {
-		top: -20px;
+		top: 0px;
 		/*opacity: 0;*/
 	}
 	15% {
@@ -142,13 +144,13 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #zero_line2 {
-	animation: zero_play_two 5s 0 forwards;
+	animation: zero_play_two 5s 2 forwards;
 	z-index: 1;
 }
 
 @keyframes zero_play_two {
 	0% {
-		top: -20px;
+		top: 0px;
 		/*opacity: 0;*/
 	}
 	15% {
@@ -176,12 +178,10 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 
 @keyframes one_play_zero {
 	0% {
-		top: -20px;
-		
+		top: 80px;
 	}
-	20% {
+	15% {
 		top: 9px;
-		
 	}
 	100% {
 		top: 9px;	
@@ -195,7 +195,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 
 @keyframes one_play_one {
 	0% {
-		top: -20px;
+		top: 80px;
 		
 	}
 	15% {
@@ -218,7 +218,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 
 @keyframes one_play_two {
 	0% {
-		top: -20px;
+		top: 80px;
 		
 	}
 	15% {
