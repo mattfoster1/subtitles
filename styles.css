@@ -51,7 +51,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	margin: 0px;
 }
 
-#subtitleCont0, #subtitleCont1, #subtitleCont2 {
+#subtitleCont0, #subtitleCont1, #subtitleCont2, #subtitleCont3, #subtitleCont4 {
 	position: relative;
 	background-color: white;
 }
@@ -94,7 +94,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #zero_line0 {
-	animation: zero_play_zero 5s 2 forwards;
+	animation: zero_play_zero 5s 15 forwards;
 	z-index: 3;
 }
 
@@ -115,7 +115,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #zero_line1 {
-	animation: zero_play_one 5s 2 forwards;
+	animation: zero_play_one 5s 15 forwards;
 	z-index: 2;
 }
 
@@ -138,7 +138,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #zero_line2 {
-	animation: zero_play_two 5s 2 forwards;
+	animation: zero_play_two 5s 15 forwards;
 	z-index: 1;
 }
 
@@ -167,7 +167,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	/* vv animation for sub 1 vv*/
 
 #one_line0 {
-	animation: one_play_zero 5s 2 forwards;
+	animation: one_play_zero 5s 15 forwards;
 	z-index: 3;
 }
 
@@ -184,7 +184,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #one_line1 {
-	animation: one_play_one 5s 2 forwards;
+	animation: one_play_one 5s 15 forwards;
 	z-index: 2;
 }
 
@@ -207,7 +207,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #one_line2 {
-	animation: one_play_two 5s 2 forwards;
+	animation: one_play_two 5s 15 forwards;
 	z-index: 1;
 }
 
@@ -260,7 +260,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 
 
 #two_line0 {
-	animation: two_play_zero 12s 3 forwards;
+	animation: two_play_zero 12s 15 forwards;
 	z-index: 3;
 	/*background-color: red;*/
 	/*color: red;*/
@@ -306,7 +306,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #two_line1 {
-	animation: two_play_one 12s 3 forwards;
+	animation: two_play_one 12s 15 forwards;
 	z-index: 2;
 	/*background-color: green;*/
 	/*color: green;*/
@@ -356,7 +356,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #two_line2 {
-	animation: two_play_two 12s 3 forwards;
+	animation: two_play_two 12s 15 forwards;
 	z-index: 1;
 	/*background-color: blue;*/
 	/*color: blue;*/
@@ -399,7 +399,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #two_line3 {
-	animation: two_play_three 12s 3 forwards;
+	animation: two_play_three 12s 15 forwards;
 	z-index: 1;
 	/*background-color: blue;*/
 	/*color: blue;*/
@@ -471,7 +471,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 
 
 #three_line0 {
-	animation: three_play_zero 12s 3 forwards;
+	animation: three_play_zero 12s 10 forwards;
 	z-index: 3;
 	/*background-color: red;*/
 	/*color: red;*/
@@ -482,29 +482,29 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	
 	0% {
 		z-index: 6;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 0;
 	}
 	10% {
 		/*top, center*/
 		z-index: 6;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;	
 	}
 	20% {
 		/*bottom, right*/
-		margin-left: 500px;	
+		margin-top: 200px;	
 		opacity: 0;
 	}
 	54.99% {
 		/*bottom, right*/
 		z-index: 3;
-		margin-left: 500px;	
+		margin-top: 200px;	
 	}
 	55% {
 		/*bottom, center*/
 		z-index: 3;
-		margin-left: 0px;
+		margin-top: 0px;
 	}
 	99.99% {
 		z-index: 3;
@@ -517,11 +517,11 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 #three_line1 {
-	animation: three_play_one 12s 3 forwards;
+	animation: three_play_one 12s 10 forwards;
 	z-index: 2;
 	/*background-color: green;*/
 	/*color: green;*/
-	/*padding-left: 30px;*/
+	/*padding-top: 30px;*/
 }
 
 @keyframes three_play_one {
@@ -531,47 +531,47 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	15% {
 		/*top, center*/
 		z-index: 5;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;
 	}
 	35% {
 		/*top, center*/
 		z-index: 5;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;		
 	}
 	44.9% {
 		z-index: 5;
-		margin-left: 500px;
+		margin-top: 200px;
 		opacity: 0;
 	}
 	45% {
 		z-index: 2;
-		margin-left: 500px;
+		margin-top: 200px;
 	}
 	99.98%{
-		margin-left: 500px;	
+		margin-top: 200px;	
 		opacity: 0;
 		display: none;
 	}
 	99.99% {
 		z-index: 2;
-		margin-left: 0px;
+		margin-top: 0px;
 		display: flex;
 	}
 	100% {
 		/*top, center*/
 		z-index: 5;
-		margin-left: 0px;
+		margin-top: 0px;
 	}
 }
 
 #three_line2 {
-	animation: three_play_two 12s 3 forwards;
+	animation: three_play_two 12s 10 forwards;
 	z-index: 1;
 	/*background-color: blue;*/
 	/*color: blue;*/
-	/*padding-left: 60px;*/
+	/*padding-top: 60px;*/
 }
 
 @keyframes three_play_two {
@@ -581,72 +581,128 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	20% {
 		/*top, center*/
 		z-index: 4;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;
 	}
 	55% {
 		/*top, center*/
 		z-index: 4;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;		
 	}
 	65% {
 		/*top, right*/
-		margin-left: 500px;	
+		margin-top: 200px;	
 		opacity: 0;
 	}
 	99.99%{
 		/*top, right*/
 		z-index: 4;
-		margin-left: 500px;
+		margin-top: 200px;
 		display: none;
 	}
 	100% {
 		/*top, center*/
 		z-index: 4;
-		margin-left: 0px;
+		margin-top: 0px;
 		display: block;
 	}
 }
 
 #three_line3 {
-	animation: three_play_three 12s 3 forwards;
+	animation: three_play_three 12s 10 forwards;
 	z-index: 1;
 	/*background-color: blue;*/
 	/*color: blue;*/
-	/*padding-left: 60px;*/
+	/*padding-top: 60px;*/
 }
 
 @keyframes three_play_three {
 	0%, 15% {
 		/*top, center*/
 		z-index: 3;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 0;
 	}
 	75% {
 		/*top, center*/
 		z-index: 3;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;		
 	}
 	85% {
 		/*top, right*/
-		margin-left: 500px;	
+		margin-top: 200px;	
 		opacity: 0;
 	}
 	99.99%{
 		/*top, right*/
 		z-index: 3;
-		margin-left: 500px;
+		margin-top: 200px;
 		display: none;
 	}
 	100% {
 		/*top, center*/
 		z-index: 3;
-		margin-left: 0px;
+		margin-top: 0px;
 		opacity: 1;
 		display: block;
 		opacity: 0;
+	}
+}
+
+	/*^^ animation for sub 3 ^^*/
+/*_**--------------------------------------------------------**_**_**--------------------------------------------------------**_*/
+	/* vv code & animation for sub 4 vv*/
+
+
+#subtitle4 {
+	/*position: absolute;*/
+	height: 100%;
+	width: auto;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+
+	/*font-family: open sans condensed, sans serif;*/
+	font-family: Bitter, serif;
+	font-size: 35px;
+	white-space: nowrap;
+	text-align: center;
+	overflow: hidden;
+	
+	/*background-color: lightblue;*/
+}
+
+.four_line {
+	/*position: absolute;*/
+	width: auto;
+	padding-left: 0%;
+	background-color: white;
+	top: 44px;
+}
+
+
+#four_line0 {
+	animation: four_play_zero 10s 10 forwards;
+	/*background-color: red;*/
+	/*color: red;*/
+	/*padding-left: 30px;*/
+}
+
+@keyframes four_play_zero {
+	/*this one is the animated ticker. Also make a Javascript one*/
+	0% {
+
+	}
+}
+/*mobile*/
+@media screen and (max-width: 1300px) and (min-width: 801px) and (min-height: 1000px) and (orientation: portrait) {
+	.subtitleCont {
+		-ms-transform: scale(1); /* IE 9 */
+	    -webkit-transform: scale(1); /* Safari */
+	    transform: scale(1); /* Standard syntax */
+
+	    /*margin-bottom: 0px;*/
 	}
 }
