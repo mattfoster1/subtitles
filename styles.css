@@ -42,6 +42,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 .subtitle {
+	overflow: hidden;
 }
 
 .subtitle ul {
@@ -50,7 +51,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	margin: 0px;
 }
 
-#subtitleCont0, #subtitleCont1 {
+#subtitleCont0, #subtitleCont1, #subtitleCont2 {
 	position: relative;
 	background-color: white;
 }
@@ -73,7 +74,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 
 #subtitle1 {
 	position: absolute;
-	top: 0px;
+	/*top: 0px;*/
 	align-items: center;
 	font-family: oswald;
 	font-size: 20px;
@@ -85,18 +86,11 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 }
 
 
-.zero_line {
+.zero_line, .one_line {
 	position: absolute;
 	width: 85%;
 	padding-left: 0%;
 	background-color: white;
-}
-
-.one_line {
-	position: absolute;
-	width: 85%;
-	padding-left: 0%;
-	background-color: white;	
 }
 
 #zero_line0 {
@@ -134,7 +128,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 		top: 9px;
 		/*opacity: 1;*/
 	}
-	25% {
+	35% {
 		top: 46px;
 		/*opacity: 1;	*/
 	}
@@ -156,11 +150,11 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 	15% {
 		top: 9px;
 	}
-	25% {
+	35% {
 		top: 46px;
 		/*opacity: 0;*/
 	}
-	35% {
+	55% {
 		top: 83px;
 		/*opacity: 1;	*/
 	}
@@ -168,8 +162,9 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 		top: 83px;	
 	}
 }
-
+	/*^^ animation for sub 0 ^^*/
 /*_**--------------------------------------------------------**_**_**--------------------------------------------------------**_*/
+	/* vv animation for sub 1 vv*/
 
 #one_line0 {
 	animation: one_play_zero 5s 2 forwards;
@@ -202,7 +197,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 		top: 9px;
 		
 	}
-	25% {
+	35% {
 		top: 46px;
 		
 	}
@@ -219,20 +214,439 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul {
 @keyframes one_play_two {
 	0% {
 		top: 80px;
-		
 	}
 	15% {
 		top: 9px;
 	}
-	25% {
-		top: 46px;
-	
-	}
 	35% {
+		top: 46px;
+	}
+	55% {
 		top: 83px;
-		/*opacity: 1;	*/
 	}
 	100% {
 		top: 83px;	
+	}
+}
+
+	/*^^ animation for sub 1 ^^*/
+/*_**--------------------------------------------------------**_**_**--------------------------------------------------------**_*/
+	/* vv code & animation for sub 2 vv*/
+
+
+#subtitle2 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+
+	/*font-family: open sans condensed, sans serif;*/
+	font-family: Fjalla One, sans-serif;
+	font-size: 35px;
+	white-space: nowrap;
+	text-align: center;
+	
+	/*background-color: lightblue;*/
+}
+
+.two_line {
+	position: absolute;
+	width: 95%;
+	padding-left: 0%;
+	background-color: white;
+	top: 44px;
+}
+
+
+#two_line0 {
+	animation: two_play_zero 12s 3 forwards;
+	z-index: 3;
+	/*background-color: red;*/
+	/*color: red;*/
+	/*padding-left: 30px;*/
+}
+
+@keyframes two_play_zero {
+	
+	0% {
+		z-index: 6;
+		margin-left: 0px;
+		opacity: 0;
+	}
+	10% {
+		/*top, center*/
+		z-index: 6;
+		margin-left: 0px;
+		opacity: 1;	
+	}
+	20% {
+		/*bottom, right*/
+		margin-left: 500px;	
+		opacity: 0;
+	}
+	54.99% {
+		/*bottom, right*/
+		z-index: 3;
+		margin-left: 500px;	
+	}
+	55% {
+		/*bottom, center*/
+		z-index: 3;
+		margin-left: 0px;
+	}
+	99.99% {
+		z-index: 3;
+	}
+	100% {
+		/*top, center*/
+		z-index: 6;
+		opacity: 0;
+	}
+}
+
+#two_line1 {
+	animation: two_play_one 12s 3 forwards;
+	z-index: 2;
+	/*background-color: green;*/
+	/*color: green;*/
+	/*padding-left: 30px;*/
+}
+
+@keyframes two_play_one {
+	0%, 10% {
+		opacity: 0;
+	}
+	15% {
+		/*top, center*/
+		z-index: 5;
+		margin-left: 0px;
+		opacity: 1;
+	}
+	35% {
+		/*top, center*/
+		z-index: 5;
+		margin-left: 0px;
+		opacity: 1;		
+	}
+	44.9% {
+		z-index: 5;
+		margin-left: 500px;
+		opacity: 0;
+	}
+	45% {
+		z-index: 2;
+		margin-left: 500px;
+	}
+	99.98%{
+		margin-left: 500px;	
+		opacity: 0;
+		display: none;
+	}
+	99.99% {
+		z-index: 2;
+		margin-left: 0px;
+		display: flex;
+	}
+	100% {
+		/*top, center*/
+		z-index: 5;
+		margin-left: 0px;
+	}
+}
+
+#two_line2 {
+	animation: two_play_two 12s 3 forwards;
+	z-index: 1;
+	/*background-color: blue;*/
+	/*color: blue;*/
+	/*padding-left: 60px;*/
+}
+
+@keyframes two_play_two {
+	0%, 15% {
+		opacity: 0;
+	}
+	20% {
+		/*top, center*/
+		z-index: 4;
+		margin-left: 0px;
+		opacity: 1;
+	}
+	55% {
+		/*top, center*/
+		z-index: 4;
+		margin-left: 0px;
+		opacity: 1;		
+	}
+	65% {
+		/*top, right*/
+		margin-left: 500px;	
+		opacity: 0;
+	}
+	99.99%{
+		/*top, right*/
+		z-index: 4;
+		margin-left: 500px;
+		display: none;
+	}
+	100% {
+		/*top, center*/
+		z-index: 4;
+		margin-left: 0px;
+		display: block;
+	}
+}
+
+#two_line3 {
+	animation: two_play_three 12s 3 forwards;
+	z-index: 1;
+	/*background-color: blue;*/
+	/*color: blue;*/
+	/*padding-left: 60px;*/
+}
+
+@keyframes two_play_three {
+	0%, 15% {
+		/*top, center*/
+		z-index: 3;
+		margin-left: 0px;
+		opacity: 0;
+	}
+	75% {
+		/*top, center*/
+		z-index: 3;
+		margin-left: 0px;
+		opacity: 1;		
+	}
+	85% {
+		/*top, right*/
+		margin-left: 500px;	
+		opacity: 0;
+	}
+	99.99%{
+		/*top, right*/
+		z-index: 3;
+		margin-left: 500px;
+		display: none;
+	}
+	100% {
+		/*top, center*/
+		z-index: 3;
+		margin-left: 0px;
+		opacity: 1;
+		display: block;
+		opacity: 0;
+	}
+}
+
+	/*^^ animation for sub 2 ^^*/
+/*_**--------------------------------------------------------**_**_**--------------------------------------------------------**_*/
+	/* vv code & animation for sub 3 vv*/
+
+
+#subtitle3 {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	align-items: center;
+	justify-content: center;
+
+	/*font-family: open sans condensed, sans serif;*/
+	font-family: Fjalla One, sans-serif;
+	font-size: 35px;
+	white-space: nowrap;
+	text-align: center;
+	
+	/*background-color: lightblue;*/
+}
+
+.three_line {
+	position: absolute;
+	width: 95%;
+	padding-left: 0%;
+	background-color: white;
+	top: 44px;
+}
+
+
+#three_line0 {
+	animation: three_play_zero 12s 3 forwards;
+	z-index: 3;
+	/*background-color: red;*/
+	/*color: red;*/
+	/*padding-left: 30px;*/
+}
+
+@keyframes three_play_zero {
+	
+	0% {
+		z-index: 6;
+		margin-left: 0px;
+		opacity: 0;
+	}
+	10% {
+		/*top, center*/
+		z-index: 6;
+		margin-left: 0px;
+		opacity: 1;	
+	}
+	20% {
+		/*bottom, right*/
+		margin-left: 500px;	
+		opacity: 0;
+	}
+	54.99% {
+		/*bottom, right*/
+		z-index: 3;
+		margin-left: 500px;	
+	}
+	55% {
+		/*bottom, center*/
+		z-index: 3;
+		margin-left: 0px;
+	}
+	99.99% {
+		z-index: 3;
+	}
+	100% {
+		/*top, center*/
+		z-index: 6;
+		opacity: 0;
+	}
+}
+
+#three_line1 {
+	animation: three_play_one 12s 3 forwards;
+	z-index: 2;
+	/*background-color: green;*/
+	/*color: green;*/
+	/*padding-left: 30px;*/
+}
+
+@keyframes three_play_one {
+	0%, 10% {
+		opacity: 0;
+	}
+	15% {
+		/*top, center*/
+		z-index: 5;
+		margin-left: 0px;
+		opacity: 1;
+	}
+	35% {
+		/*top, center*/
+		z-index: 5;
+		margin-left: 0px;
+		opacity: 1;		
+	}
+	44.9% {
+		z-index: 5;
+		margin-left: 500px;
+		opacity: 0;
+	}
+	45% {
+		z-index: 2;
+		margin-left: 500px;
+	}
+	99.98%{
+		margin-left: 500px;	
+		opacity: 0;
+		display: none;
+	}
+	99.99% {
+		z-index: 2;
+		margin-left: 0px;
+		display: flex;
+	}
+	100% {
+		/*top, center*/
+		z-index: 5;
+		margin-left: 0px;
+	}
+}
+
+#three_line2 {
+	animation: three_play_two 12s 3 forwards;
+	z-index: 1;
+	/*background-color: blue;*/
+	/*color: blue;*/
+	/*padding-left: 60px;*/
+}
+
+@keyframes three_play_two {
+	0%, 15% {
+		opacity: 0;
+	}
+	20% {
+		/*top, center*/
+		z-index: 4;
+		margin-left: 0px;
+		opacity: 1;
+	}
+	55% {
+		/*top, center*/
+		z-index: 4;
+		margin-left: 0px;
+		opacity: 1;		
+	}
+	65% {
+		/*top, right*/
+		margin-left: 500px;	
+		opacity: 0;
+	}
+	99.99%{
+		/*top, right*/
+		z-index: 4;
+		margin-left: 500px;
+		display: none;
+	}
+	100% {
+		/*top, center*/
+		z-index: 4;
+		margin-left: 0px;
+		display: block;
+	}
+}
+
+#three_line3 {
+	animation: three_play_three 12s 3 forwards;
+	z-index: 1;
+	/*background-color: blue;*/
+	/*color: blue;*/
+	/*padding-left: 60px;*/
+}
+
+@keyframes three_play_three {
+	0%, 15% {
+		/*top, center*/
+		z-index: 3;
+		margin-left: 0px;
+		opacity: 0;
+	}
+	75% {
+		/*top, center*/
+		z-index: 3;
+		margin-left: 0px;
+		opacity: 1;		
+	}
+	85% {
+		/*top, right*/
+		margin-left: 500px;	
+		opacity: 0;
+	}
+	99.99%{
+		/*top, right*/
+		z-index: 3;
+		margin-left: 500px;
+		display: none;
+	}
+	100% {
+		/*top, center*/
+		z-index: 3;
+		margin-left: 0px;
+		opacity: 1;
+		display: block;
+		opacity: 0;
 	}
 }
