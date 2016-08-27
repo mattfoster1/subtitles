@@ -853,6 +853,24 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 /*_**--------------------------------------------------------**_**_**--------------------------------------------------------**_*/
 	/* vv animation for sub 6 vv*/
 
+#subtitleCont6 {
+	border-top: 20px solid white;
+	border: 20px solid white;
+	border-left: none;
+	border-right: none;
+	justify-content: flex-start;
+	padding-left: 20px;
+
+	outline: 1px solid black;
+
+	box-shadow: 0 20px 20px white inset, 0 -20px 20px white inset;
+	overflow: hidden;
+
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
 #subtitle6 {
 	height: auto;
 	width: auto;
@@ -863,25 +881,25 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 	font-size: 30px;
 	white-space: nowrap;
 	/*animation: five_play_whole 5s 15 forwards linear;*/
-	overflow: visible;
+	/*overflow: visible;*/
+	overflow: hidden;
 }
 
 #six_line_a_cont {
-	background-color: lightblue;
 	flex-direction: column-reverse;
-	animation: six_play_a 20s 15 forwards;
-	/*overflow: visible;*/
+	animation: six_play_a 20s 5 forwards;
 }
 
 #six_line_b_cont {
-	background-color: lightpink;
 	flex-direction: column;
-	animation: six_play_b 20s 15 forwards;
+	animation: six_play_b 20s 5 forwards;
 	
 }
 
 #six_line_a_cont, #six_line_b_cont {
 	height: 60px;
+	z-index: 0;
+	/*overflow: hidden;*/
 }
 
 .six_line_a {
@@ -891,89 +909,115 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 
 @keyframes six_play_a {
 	0% {
-		opacity: 1;
-		margin-top: 0px;
-	}
+		opacity: 0;
+		margin-top: 8px;
+	} 
 	5% {
 		opacity: 1;
-		margin-top: 0px;
+		margin-top: 8px;
 	}
 	7.5% {
-		opacity: 0.5; /*fade out for animation*/
+		opacity: 0.8; /*fade out for animation*/
 	}
-	10% {
+	10%, 45% {
 		opacity: 1;
 		margin-top: 144px;
 	}
-	45% {
-		opacity: 1;
-		margin-top: 144px;	
-	}
 	47.5% {
-		opacity: 0.5;
+		opacity: 0.8;
 	}
-	50% {
+	50%, 60% {
 		opacity: 1;
-		margin-top: 250px;
+		margin-top: 280px;
+	}
+	62.5% {
+		opacity: 0.8;
+	}
+	65%, 90% {
+		opacity: 1;
+		margin-top: 415px;
+	}
+	92.5% {
+		opacity: 0;
 	}
 	100% {
-		opacity: 1;
-		margin-top: 250px
+		opacity: 0;
+		margin-top: 415px;
 	}
 
 }
+
+/*tatty bye = 414px*/
 
 .six_line_b {
 	padding: 15px 0;
 }
 
-
-
 @keyframes six_play_b {
 	0% {
-		opacity: 1;
-		margin-bottom: 7px;
+		opacity: 0;
+		margin-bottom: 9px;
 	}
-	15% {
+	5%, 15% {
 		opacity: 1;
-		margin-bottom: 7px;
+		margin-bottom: 9px;
 	}
 	17.5% {
-		opacity: 0.5;
+		opacity: 0.8;
 	}
-	20% {
-		opacity: 1;
-		margin-bottom: 145px;
-	}
-	30% {
+	20%, 30% {
 		opacity: 1;
 		margin-bottom: 145px;
 	}
 	32.5% {
-		opacity: 0.5;
+		opacity: 0.8;
 	}
-	35% {
-		opacity: 1;
-		margin-bottom: 280px;
-	}
-	45%{
+	35%, 45% {
 		opacity: 1;
 		margin-bottom: 280px;
 	}
 	47.2% {
-		opacity: 0.5;
+		opacity: 0.8;
 	}
-	50% {
+	50%, 60% {
 		opacity: 1;
-		margin-bottom: 7px;	
+		margin-bottom: 9px;	
+	}
+	62.5% {
+		opacity: 0.8;
+	}
+	65%, 75% {
+		opacity: 1;
+		margin-bottom: 145px;
+	}
+	77.5% {
+		opacity: 0.8%;
+	}
+	80%, 90% {
+		opacity: 1;
+		margin-bottom: 417px;
+	}
+	92.5% {
+		opacity: 0;
 	}
 	100% {
-		opacity: 1;
-		margin-bottom: 7px;
+		opacity: 0;
+		margin-bottom: 417px;
 	}
 }
 
 #six_line_c {
-	padding: 0px 10px;
+	padding: 0px 10px 0px 0px;
 	font-size: 30px;
+	animation: six_play_c 20s 5 forwards;
+}
+
+@keyframes six_play_c {
+	5%, 90% {
+		opacity: 1;
+	}
+	0%, 92.5%, 100% {
+		opacity: 0;
+	}
+
 }
