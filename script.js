@@ -1,5 +1,5 @@
 var start = function() {
-	animate4();
+	// animate4();
 }
 
 var animate4 = function() {

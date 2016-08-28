@@ -23,7 +23,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 	width: 95%;
 	height: auto;
 	min-width: 935px;
-	flex-wrap: wrap-reverse;
+	flex-wrap: wrap;
 	align-items: flex-start;
 	justify-content: flex-start;
 	flex-direction: row;
@@ -994,4 +994,10 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 		opacity: 0;
 	}
 
+}
+
+.construction_notice {
+	font-size: 40px;
+	color: goldenrod;
+	font-family: Miriam Libre;
 }
