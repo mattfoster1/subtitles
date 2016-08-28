@@ -50,16 +50,16 @@ var animate4 = function() {
 	// console.log(line2.style.left);
 
 
-	var pushAlong = setInterval(function(){	
-		console.log("width = " + parseInt(line0width) + " , " + parseInt(line1width) + " , " + parseInt(line2width));
-		console.log("left = " + line0left + " , " + line1left + " , " + line2left);
+	// var pushAlong = setInterval(function(){	
+		// console.log("width = " + parseInt(line0width) + " , " + parseInt(line1width) + " , " + parseInt(line2width));
+		// console.log("left = " + line0left + " , " + line1left + " , " + line2left);
 
 		// line0.style.left += 1 + "px";
 		// line1.style.left += 1 + "px";
 		// line2.style.left += 1 + "px";
 
 		// console.log("___loop___");
-	}, 1000)
+	// }, 1000)
 
     // if (line2.)
 

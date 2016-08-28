@@ -57,25 +57,22 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 }
 
 #subtitle0 {
-	position: absolute;
 	top: 0px;
-	/*justify-content: flex-start;*/
-	align-items: center;
+	left: 0px;
 	font-family: oswald;
 	font-size: 20px;
 	height: 100%;
 	width: 100%;
 	letter-spacing: 4px;
 	white-space: nowrap;
-	/*background-color: lightblue;*/
 	flex-direction: column;
-	/*justify-content: space-around;*/
 }
 
 #subtitle1 {
-	position: absolute;
-	/*top: 0px;*/
-	align-items: center;
+	/*position: absolute;*/
+	top: 0px;
+	left: 0px;
+	/*align-items: center;*/
 	font-family: oswald;
 	font-size: 20px;
 	height: 100%;
@@ -89,8 +86,9 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 .zero_line, .one_line {
 	position: absolute;
 	width: 85%;
-	padding-left: 0%;
+	padding-left: 7.5%;
 	background-color: white;
+
 }
 
 #zero_line0 {
@@ -101,7 +99,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 @keyframes zero_play_zero {
 	0% {
 		top: 0px;
-		color: rgba(0,0,0,0.5)
+		color: rgba(0,0,0,0.5);
 	}
 	15% {
 		color: black;
@@ -233,13 +231,17 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 /*_**--------------------------------------------------------**_**_**--------------------------------------------------------**_*/
 	/* vv code & animation for sub 2 vv*/
 
+#subtitleCont2 {
+	overflow: hidden;
+}
 
 #subtitle2 {
-	position: absolute;
 	height: 100%;
 	width: 100%;
-	align-items: center;
-	justify-content: center;
+	left: 0px;
+	top: 0px;
+	/*align-items: center;*/
+	/*justify-content: center;*/
 
 	/*font-family: open sans condensed, sans serif;*/
 	font-family: Fjalla One, sans-serif;
@@ -253,7 +255,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 .two_line {
 	position: absolute;
 	width: 95%;
-	padding-left: 0%;
+	padding-left: 2.5%;
 	background-color: white;
 	top: 44px;
 }
@@ -445,25 +447,22 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 	/* vv code & animation for sub 3 vv*/
 
 
+#subtitleCont3 {
+	overflow: hidden;
+}
+
 #subtitle3 {
-	position: absolute;
 	height: 100%;
 	width: 100%;
-	align-items: center;
-	justify-content: center;
-
-	/*font-family: open sans condensed, sans serif;*/
 	font-family: Fjalla One, sans-serif;
 	font-size: 35px;
 	white-space: nowrap;
 	text-align: center;
-	
-	/*background-color: lightblue;*/
 }
 
 .three_line {
 	position: absolute;
-	width: 95%;
+	width: 100%;
 	padding-left: 0%;
 	background-color: white;
 	top: 44px;
@@ -471,38 +470,31 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 
 
 #three_line0 {
-	animation: three_play_zero 12s 10 forwards;
+	animation: three_play_zero 15s 10 forwards;
 	z-index: 3;
-	/*background-color: red;*/
-	/*color: red;*/
-	/*padding-left: 30px;*/
 }
 
 @keyframes three_play_zero {
 	
-	0% {
+	0%, {
 		z-index: 6;
 		margin-top: 0px;
 		opacity: 0;
 	}
 	10% {
-		/*top, center*/
 		z-index: 6;
 		margin-top: 0px;
 		opacity: 1;	
 	}
 	20% {
-		/*bottom, right*/
 		margin-top: 200px;	
 		opacity: 0;
 	}
 	54.99% {
-		/*bottom, right*/
 		z-index: 3;
 		margin-top: 200px;	
 	}
 	55% {
-		/*bottom, center*/
 		z-index: 3;
 		margin-top: 0px;
 	}
@@ -510,35 +502,24 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 		z-index: 3;
 	}
 	100% {
-		/*top, center*/
 		z-index: 6;
 		opacity: 0;
 	}
 }
 
 #three_line1 {
-	animation: three_play_one 12s 10 forwards;
+	animation: three_play_one 15s 10 forwards;
 	z-index: 2;
-	/*background-color: green;*/
-	/*color: green;*/
-	/*padding-top: 30px;*/
 }
 
 @keyframes three_play_one {
 	0%, 10% {
 		opacity: 0;
 	}
-	15% {
-		/*top, center*/
+	15%, 35% {
 		z-index: 5;
 		margin-top: 0px;
 		opacity: 1;
-	}
-	35% {
-		/*top, center*/
-		z-index: 5;
-		margin-top: 0px;
-		opacity: 1;		
 	}
 	44.9% {
 		z-index: 5;
@@ -560,35 +541,25 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 		display: flex;
 	}
 	100% {
-		/*top, center*/
 		z-index: 5;
 		margin-top: 0px;
 	}
 }
 
 #three_line2 {
-	animation: three_play_two 12s 10 forwards;
+	animation: three_play_two 15s 10 forwards;
 	z-index: 1;
-	/*background-color: blue;*/
-	/*color: blue;*/
-	/*padding-top: 60px;*/
 }
 
 @keyframes three_play_two {
 	0%, 15% {
 		opacity: 0;
 	}
-	20% {
+	20%, 55% {
 		/*top, center*/
 		z-index: 4;
 		margin-top: 0px;
 		opacity: 1;
-	}
-	55% {
-		/*top, center*/
-		z-index: 4;
-		margin-top: 0px;
-		opacity: 1;		
 	}
 	65% {
 		/*top, right*/
@@ -610,7 +581,7 @@ html, body, #main, .subtitleCont, .subtitle, #subtitle0 ul, #six_line_a_cont, #s
 }
 
 #three_line3 {
-	animation: three_play_three 12s 10 forwards;
+	animation: three_play_three 15s 10 forwards;
 	z-index: 1;
 	/*background-color: blue;*/
 	/*color: blue;*/
